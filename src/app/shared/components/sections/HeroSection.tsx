@@ -9,10 +9,10 @@ export default function HeroSection() {
       <div className={styles.backBlock}>
         <div className={styles.heroBlock}>
           <h1 className={styles.title}>Optimize website</h1>
-          <div className={styles.subtitle}>
+          <p className={styles.subtitle}>
             Ensure your website meets accessability standards with artificial
             intelligence.
-          </div>
+          </p>
           <div className={styles.btnContainer}>
             <AppLink className={styles.accentBtn} href={"/"}>
               Optimize now

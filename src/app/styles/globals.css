@@ -7,13 +7,15 @@
 
   --clr-shadow: #aaaa;
 
-  --base-width: 1200px
+  --base-width: 1200px;
 }
 
-*{
+* {
   box-sizing: border-box;
+  font-family: var(--font-open-sans) !important;
+  line-height: 1.6rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
