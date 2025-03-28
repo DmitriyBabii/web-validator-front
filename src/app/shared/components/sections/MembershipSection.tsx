@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./styles/InputDesign.module.css";
+import AppLink from "../AppLink";
 
 interface MembershipStepProps {
   iconSrc: string;
@@ -71,12 +72,12 @@ export default function MembershipSection() {
             </div>
             <div className={styles.div46}>
               <div className={styles.div47}>
-                <a
+                <AppLink
                   href="https://www.mieterverein-hamburg.de/mitglied-werden"
                   className={styles.a10}
                 >
                   Mitgliedschaft beantragen
-                </a>
+                </AppLink>
               </div>
             </div>
           </div>

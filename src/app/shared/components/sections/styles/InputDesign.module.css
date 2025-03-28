@@ -408,6 +408,7 @@
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
     text-decoration-color: #0145ac;
     text-emphasis-color: #0145ac;
   }
@@ -1036,10 +1037,10 @@
     border-color: #0145ac;
     outline-color: #0145ac;
     margin-bottom: 16px;
-    font-family: Stolzl-MVH;
     font-size: 18px;
     font-weight: 500;
     line-height: 25.2px;
+    text-decoration: none;
     text-decoration-color: #0145ac;
     text-emphasis-color: #0145ac;
   }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./styles/InputDesign.module.css";
+import AppLink from "../AppLink";
 
 export default function PressSection() {
   return (
@@ -34,12 +35,12 @@ export default function PressSection() {
               </p>
             </div>
             <div>
-              <a
+              <AppLink
                 href="https://www.mieterverein-hamburg.de/pressespiegel/"
                 className={styles.a11}
               >
                 Zum Pressespiegel
-              </a>
+              </AppLink>
             </div>
           </div>
         </div>
