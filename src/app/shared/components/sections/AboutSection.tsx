@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../styles/InputDesign.module.css";
-import AppLink from "../../AppLink";
+import styles from "./styles/InputDesign.module.css";
+import AppLink from "../AppLink";
 
 export default function AboutSection() {
   return (
