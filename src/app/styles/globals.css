@@ -1,0 +1,19 @@
+:root {
+  --clr-lite: #f0f0f0;
+  --clr-main: #213555;
+  --clr-main-lite: #4f709c;
+  --clr-accent: #e5d283;
+  --clr-white: #fff;
+
+  --clr-shadow: #aaaa;
+
+  --base-width: 1200px
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}

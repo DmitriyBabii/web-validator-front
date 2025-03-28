@@ -1,0 +1,84 @@
+.root {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  height: calc(480px + 128px);
+  width: var(--base-width);
+  margin: 24px auto;
+}
+
+.backBlock {
+  width: 70%;
+  background-color: #e5d283;
+  border-top-right-radius: 56px;
+  border-bottom-left-radius: 56px;
+
+  padding: 56px 0 36px 56px;
+}
+
+.heroBlock {
+  position: relative;
+  z-index: 3;
+
+  width: 70%;
+  height: 100%;
+  background-color: aliceblue;
+  padding: 56px;
+
+  border-top-right-radius: 36px;
+  border-bottom-left-radius: 36px;
+}
+
+.image {
+  position: absolute;
+  top: 128px;
+
+  z-index: 2;
+
+  width: 60%;
+  height: fit-content;
+
+  align-self: flex-end;
+
+  border-bottom-left-radius: 56px;
+}
+
+.title {
+  font-family: var(--font-geist-sans);
+  color: #213555;
+}
+
+.subtitle {
+  font-family: var(--font-geist-sans);
+  color: #213555;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 24px;
+
+  margin-top: 36px;
+}
+
+.accentBtn,
+.secondBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-geist-sans);
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+.accentBtn {
+  color: var(--clr-white);
+  background-color: var(--clr-main);
+}
+
+.secondBtn {
+  color: var(--clr-main);
+  border: 2px solid var(--clr-main);
+}
