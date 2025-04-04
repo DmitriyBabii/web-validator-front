@@ -1,0 +1,168 @@
+.container {
+    background-color: #fff;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    display: flex;
+  }
+  @media (width<=640px) {
+    .container {
+      padding: 16px;
+    }
+  }
+  
+  .statsContainer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .statsContainer {
+      gap: 8px;
+    }
+  }
+  @media (width<=640px) {
+    .statsContainer {
+      gap: 6px;
+    }
+  }
+  
+  .statBox {
+    background-color: #ff3636;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 72px;
+    padding: 6px 12px;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .statBox {
+      height: 60px;
+      padding: 4px 10px;
+    }
+  }
+  @media (width<=640px) {
+    .statBox {
+      height: 50px;
+      padding: 4px 8px;
+    }
+  }
+  
+  .statValue {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  @media (width<=991px) {
+    .statValue {
+      font-size: 20px;
+    }
+  }
+  @media (width<=640px) {
+    .statValue {
+      font-size: 18px;
+    }
+  }
+  
+  .statLabel {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+  }
+  @media (width<=991px) {
+    .statLabel {
+      font-size: 12px;
+    }
+  }
+  @media (width<=640px) {
+    .statLabel {
+      font-size: 11px;
+    }
+  }
+  
+  .contentContainer {
+    gap: 24px;
+    width: 100%;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+  }
+  
+  .warningContainer {
+    border: 1px solid #000;
+    flex: 1;
+    padding: 12px;
+  }
+  
+  .warningContent {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+  }
+  
+  .warningBadge {
+    color: #fff;
+    background-color: #ffac15;
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+  
+  .warningMessage {
+    margin: 8px 0;
+  }
+  
+  .warningDetails {
+    margin-top: 8px;
+  }
+  
+  .textDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100px;
+
+    background-color: #a84e4e;
+    flex: 1;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  @media (width<=991px) {
+    .textDisplay {
+      padding: 24px;
+    }
+  }
+  @media (width<=640px) {
+    .textDisplay {
+      padding: 20px;
+    }
+  }
+  
+
+  .lowContrast {
+    background-color: #ffdddd;
+    color: #990000;
+  }
+  
+  .mediumContrast {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .highContrast {
+    background-color: #d4edda;
+    color: #155724;
+  }

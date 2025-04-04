@@ -1,0 +1,56 @@
+.errorCard {
+  background-color: #fff;
+  border-radius: 24px;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  display: flex;
+}
+.errorHeader {
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  display: flex;
+}
+@media (width<=640px) {
+  .errorHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.errorLabel {
+  color: #fff;
+  background-color: #ff3636;
+  border-radius: 12px;
+  padding: 5px 24px;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+@media (width<=640px) {
+  .errorLabel {
+    width: auto;
+  }
+}
+.errorMessage {
+  color: #000;
+  flex: 1;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+@media (width<=640px) {
+  .errorMessage {
+    font-size: 20px;
+  }
+}
+.errorDetails {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
