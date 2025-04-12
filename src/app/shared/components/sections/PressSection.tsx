@@ -2,9 +2,11 @@ import Image from "next/image";
 import styles from "./styles/InputDesign.module.css";
 import AppLink from "../AppLink";
 
+import pressImage from "../../images/press/press.jpg";
+
 export default function PressSection() {
   return (
-    <section className={styles.section6}>
+    <section id="press-section" className={styles.section6}>
       <div className={styles.div68}>
         <div className={styles.div69}>
           <div className={styles.div70}>
@@ -14,32 +16,33 @@ export default function PressSection() {
               alt=""
               decoding="async"
               fetchPriority="low"
-              src="https://www.mieterverein-hamburg.de/wp-content/uploads/2023/08/Bildschirm_foto-2023-04-20-um-14.02-4.jpg"
+              src={pressImage}
               className={styles.img13}
             />
           </div>
           <div className={styles.div71}>
             <div className={styles.div72}>
-              <h4 className={styles.h42}>Unser aktueller Pressespiegel</h4>
+              <h4 className={styles.h42}>Why Website Validation Matters</h4>
               <p className={styles.p17}>
-                Der Mieterverein zu Hamburg in den Medien
+                Clean code. Strong performance. Better results.
               </p>
               <p className={styles.p18}>
-                Wohnraummangel, Indexmiete und steigende Heizkosten – die Themen
-                Wohnen und Mieten sind omnipräsent in den Medien. Als
-                Interessenvertretung von Hamburgs Mieter:innen beteiligt sich
-                der Mieterverein zu Hamburg an der öffentlichen Diskussion und
-                wird von vielen regionalen und überregionalen Medien zitiert. In
-                unserem Pressespiegel finden Sie eine Auswahl der Berichte und
-                Beiträge.
+                Modern websites aren&apos;t just about design - they must be
+                built on solid, error-free foundations. HTML and CSS validation
+                ensures your site runs smoothly across all browsers, meets web
+                standards, and is easier to maintain and scale. Incorrect or
+                outdated code can disrupt layouts, slow down performance, and
+                negatively impact your SEO. By validating your website, you
+                improve reliability, accessibility, and future-proof your
+                digital presence.
               </p>
             </div>
             <div>
               <AppLink
-                href="https://www.mieterverein-hamburg.de/pressespiegel/"
+                href="/validate"
                 className={styles.a11}
               >
-                Zum Pressespiegel
+                Check Your Site Now
               </AppLink>
             </div>
           </div>

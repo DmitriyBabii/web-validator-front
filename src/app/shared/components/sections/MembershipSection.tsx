@@ -2,6 +2,11 @@ import Image from "next/image";
 import styles from "./styles/InputDesign.module.css";
 import AppLink from "../AppLink";
 
+import memberImag1 from "../../images/membership/Analyze-Data-3.svg";
+import memberImag2 from "../../images/membership/Filling-Survey-2.svg";
+import memberImag3 from "../../images/membership/Beratung.svg";
+import memberImag4 from "../../images/membership/Aproval-5.svg";
+
 interface MembershipStepProps {
   iconSrc: string;
   title: string;
@@ -35,48 +40,46 @@ function MembershipStep({ iconSrc, title, description }: MembershipStepProps) {
 export default function MembershipSection() {
   const steps = [
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/08/Filling-Survey-2.svg",
-      title: "Formular ausfüllen",
-      description: "Ob online oder auf Papier. Schnell und unkompliziert.",
-    },
-    {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/08/Analyze-Data-3.svg",
-      title: "Wir prüfen Ihre Daten",
-      description: "Wir nehmen uns Ihrer an und bereiten uns auf Sie vor.",
-    },
-    {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/08/Aproval-5.svg",
-      title: "Freischaltung",
+      iconSrc: memberImag1,
+      title: "Run a Contrast Test",
       description:
-        "Beitrittsbestätigung und Aktivierung des Online-Mitgliederbereichs.",
+        "You can use our tool to scan your site and identify low-contrast elements quickly",
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/08/Beratung.svg",
-      title: "Beratung & Hilfe",
+      iconSrc: memberImag2,
+      title: "Review the Results",
       description:
-        "Nun können Sie Ihr mietrechtliches Anliegen mit uns klären.",
+        "We highlight problem areas and explain why they matter for accessibility",
+    },
+    {
+      iconSrc: memberImag3,
+      title: "Apply Improvements",
+      description:
+        "Receive clear guidance on how to resolve contrast issues and improve readability",
+    },
+    {
+      iconSrc: memberImag4,
+      title: "Ensure Inclusive Access",
+      description:
+        "A well-contrasted site supports all users, including those with visual impairments",
     },
   ];
 
   return (
-    <section className={styles.section5}>
+    <section id="membership-section" className={styles.section5}>
       <div className={styles.div42}>
         <div className={styles.div43}>
           <div className={styles.div44}>
             <div className={styles.div45}>
-              <h2 className={styles.h2}>So werden Sie Mitglied</h2>
+              <h2 className={styles.h2}>Make Your Website Accessible</h2>
             </div>
             <div className={styles.div46}>
               <div className={styles.div47}>
                 <AppLink
-                  href="https://www.mieterverein-hamburg.de/mitglied-werden"
+                  href="/color"
                   className={styles.a10}
                 >
-                  Mitgliedschaft beantragen
+                  Contrast Check
                 </AppLink>
               </div>
             </div>

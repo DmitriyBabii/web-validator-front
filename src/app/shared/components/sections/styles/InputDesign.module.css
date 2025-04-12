@@ -219,16 +219,16 @@
     padding-right: 32px;
   }
   .h3 {
-    color: #0145ac;
-    border-color: #0145ac;
-    outline-color: #0145ac;
+    color: #4f709c;
+    border-color: #4f709c;
+    outline-color: #4f709c;
     margin-bottom: 16px;
     font-family: Stolzl-MVH;
     font-size: 36px;
     font-weight: 500;
     line-height: 44px;
-    text-decoration-color: #0145ac;
-    text-emphasis-color: #0145ac;
+    text-decoration-color: #4f709c;
+    text-emphasis-color: #4f709c;
   }
   .p {
     font-variant: oldstyle-nums proportional-nums;
@@ -237,6 +237,7 @@
     font-family: Stolzl-MVH;
     font-size: 24px;
     line-height: 28px;
+    color: #213555;
   }
   .div11 {
     flex-flow: wrap;
@@ -288,12 +289,12 @@
     overflow: clip;
   }
   .a5 {
-    color: #fdfdfd;
+    color: #fff;
     cursor: pointer;
     text-align: center;
     transition-behavior: normal, normal;
     vertical-align: middle;
-    background-color: #0145ac;
+    background-color: #213555;
     border: 0.8px solid #fff0;
     border-radius: 100px;
     outline-color: #fdfdfd;
@@ -320,9 +321,11 @@
     font-variant: oldstyle-nums proportional-nums;
     font-variant-numeric: oldstyle-nums proportional-nums;
     margin-bottom: 16px;
+    color: #213555;
   }
   .ul {
     margin-bottom: 16px;
+    color: #213555;
   }
   .li {
     text-align: left;
@@ -345,7 +348,7 @@
     display: inline;
   }
   .section3 {
-    background-color: #649ddf;
+    background-color: #e5d283;
     flex-direction: column;
     display: flex;
     overflow: hidden;
@@ -363,7 +366,6 @@
     overflow: auto;
   }
   .a6 {
-    color: #0145ac;
     cursor: pointer;
     text-align: center;
     background-color: #fff0;
@@ -371,8 +373,7 @@
     outline-color: #0145ac;
     flex-shrink: 0;
     justify-content: center;
-    width: 100%;
-    max-width: 240px;
+    width: 240px;
     margin-right: 24px;
     text-decoration-color: #0145ac;
     text-emphasis-color: #0145ac;
@@ -391,6 +392,9 @@
     flex-flow: column;
     align-items: center;
     padding: 32px 16px;
+
+    width: 100%;
+
     text-decoration-color: #0145ac;
     text-emphasis-color: #0145ac;
     transition-duration: 0.3s;
@@ -429,18 +433,19 @@
     overflow: clip;
   }
   .h5 {
-    color: #0145ac;
+    color: #4f709c;
     cursor: pointer;
     text-align: center;
-    border-color: #0145ac;
-    outline-color: #0145ac;
+    border-color: #4f709c;
+    outline-color: #4f709c;
     margin-bottom: 8px;
     font-family: Stolzl-MVH;
     font-size: 18px;
     font-weight: 500;
     line-height: 25.2px;
-    text-decoration-color: #0145ac;
-    text-emphasis-color: #0145ac;
+    text-decoration-color: #4f709c;
+    text-emphasis-color: #4f709c;
+    font-weight: 800;
   }
   .p4 {
     cursor: pointer;
@@ -448,6 +453,8 @@
     font-variant-numeric: oldstyle-nums proportional-nums;
     text-align: center;
     margin-bottom: 32px;
+    color: #213555;
+    text-decoration-color: #213555;
   }
   .span {
     color: #0145ac;
@@ -814,17 +821,17 @@
     padding-bottom: 56px;
   }
   .h32 {
-    color: #0145ac;
+    color: #4f709c;
     text-align: center;
-    border-color: #0145ac;
-    outline-color: #0145ac;
+    border-color: #4f709c;
+    outline-color: #4f709c;
     margin-bottom: 16px;
     font-family: Stolzl-MVH;
     font-size: 36px;
     font-weight: 500;
     line-height: 44px;
-    text-decoration-color: #0145ac;
-    text-emphasis-color: #0145ac;
+    text-decoration-color: #4f709c;
+    text-emphasis-color: #4f709c;
   }
   .p10 {
     font-variant: oldstyle-nums proportional-nums;
@@ -833,6 +840,7 @@
     font-family: Stolzl-MVH;
     font-size: 24px;
     line-height: 28px;
+    color: #213555;
   }
   .div36 {
     flex-shrink: 0;
@@ -944,15 +952,15 @@
     margin-right: 12px;
   }
   .h2 {
-    color: #0145ac;
-    border-color: #0145ac;
-    outline-color: #0145ac;
+    color: #4f709c;
+    border-color: #4f709c;
+    outline-color: #4f709c;
     font-family: Stolzl-MVH;
     font-size: 44px;
     font-weight: 500;
     line-height: 61.6px;
-    text-decoration-color: #0145ac;
-    text-emphasis-color: #0145ac;
+    text-decoration-color: #4f709c;
+    text-emphasis-color: #4f709c;
   }
   .div46 {
     flex-shrink: 0;
@@ -1032,17 +1040,17 @@
     margin-right: auto;
   }
   .h52 {
-    color: #0145ac;
+    color: #4f709c;
     text-align: center;
-    border-color: #0145ac;
-    outline-color: #0145ac;
+    border-color: #4f709c;
+    outline-color: #4f709c;
     margin-bottom: 16px;
     font-size: 18px;
     font-weight: 500;
     line-height: 25.2px;
     text-decoration: none;
-    text-decoration-color: #0145ac;
-    text-emphasis-color: #0145ac;
+    text-decoration-color: #4f709c;
+    text-emphasis-color: #4f709c;
   }
   .p13 {
     font-variant: oldstyle-nums proportional-nums;
@@ -1266,8 +1274,8 @@
     display: inline-block;
   }
   .section6 {
-    background-color: #01142d;
-    margin-bottom: -2px;
+    background-color: #213555;
+    overflow: hidden;
   }
   .div68 {
     max-width: 1440px;
@@ -1324,7 +1332,7 @@
     text-emphasis-color: #fff;
   }
   .p17 {
-    color: #51bb62;
+    color: #e5d283;
     font-variant: oldstyle-nums proportional-nums;
     font-variant-numeric: oldstyle-nums proportional-nums;
     border-color: #51bb62;
@@ -1346,6 +1354,16 @@
     text-emphasis-color: #fff;
   }
   .a11 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding-bottom: 24px;
+
+    text-decoration: underline;
+
+    font-size: 20px;
+    font-weight: 700;
     color: #fff;
     cursor: pointer;
     background-color: #fff0;
@@ -1358,7 +1376,9 @@
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     position: relative;
+    font-weight: 700;
   }
+
   .section7 {
     background-color: #fdfdfd;
     padding-top: 89px;

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <g id="Icon/Amazon Pin Location" clip-path="url(#clip0_2355_5730)">
+    <path id="Vector" d="M23.4654 18.6001C27.732 19.8001 30.6654 21.9335 30.6654 24.3335C30.6654 28.0668 24.132 31.0001 15.9987 31.0001C7.86536 31.0001 1.33203 28.0668 1.33203 24.3335C1.33203 21.8001 4.53203 19.5335 9.33203 18.4668" stroke="#E5D283" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector_2" d="M20.8 22.2002C22.6667 22.7335 24 23.4002 24 24.3335C24 25.8002 20.4 27.0002 16 27.0002C11.6 27.0002 8 25.8002 8 24.3335C8 23.4002 9.33333 22.6002 11.3333 22.2002" stroke="#E5D283" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector_3" d="M16.1328 7C16.3995 7 16.6661 7.26667 16.6661 7.53333C16.6661 7.8 16.3995 8.06667 16.1328 8.06667" stroke="#E5D283" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector_4" d="M16.1349 7C15.8682 7 15.6016 7.26667 15.6016 7.53333C15.6016 7.8 15.8682 8.06667 16.1349 8.06667" stroke="#E5D283" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector_5" d="M16.1341 1C20.1341 1 23.4674 4.33333 23.4674 8.33333C23.4674 11.4 19.0674 17.4 17.0674 19.9333C16.8008 20.2 16.5341 20.4667 16.1341 20.4667C15.7341 20.4667 15.4674 20.3333 15.2008 19.9333C13.2008 17.4 8.80078 11.4 8.80078 8.33333C8.80078 4.33333 12.1341 1 16.1341 1Z" stroke="#E5D283" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_2355_5730">
+      <rect width="32" height="32" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

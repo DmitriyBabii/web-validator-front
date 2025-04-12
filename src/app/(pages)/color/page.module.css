@@ -1,102 +1,126 @@
 .container {
-    flex-direction: column;
-    gap: 36px;
-    min-height: 100vh;
-    padding: 24px 228px;
-    display: flex;
+  flex-direction: column;
+  gap: 36px;
+  display: flex;
+}
+@media (width<=991px) {
+  .container {
+    padding: 48px 24px;
   }
-  @media (width<=991px) {
-    .container {
-      padding: 48px 24px;
-    }
+}
+@media (width<=640px) {
+  .container {
+    padding: 24px 16px;
   }
-  @media (width<=640px) {
-    .container {
-      padding: 24px 16px;
-    }
-  }
+}
+.validationSection {
+  background-color: #649ddf;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 1032px;
+  padding: 36px;
+  margin: 0 auto;
+}
+@media (width<=991px) {
   .validationSection {
-    background-color: #649ddf;
-    border-radius: 32px;
-    width: 100%;
-    max-width: 1032px;
-    padding: 36px;
+    padding: 24px;
   }
-  @media (width<=991px) {
-    .validationSection {
-      padding: 24px;
-    }
-  }
-  .validationContent {
-    flex-direction: column;
-    gap: 24px;
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-  }
+}
+.validationContent {
+  flex-direction: column;
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+.validationTitle {
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+@media (width<=640px) {
   .validationTitle {
-    color: #fff;
-    font-family: Inter, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-  }
-  @media (width<=640px) {
-    .validationTitle {
-      font-size: 24px;
-    }
-  }
-  .inputGroup {
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    display: flex;
-  }
-  @media (width<=991px) {
-    .inputGroup {
-      flex-direction: column;
-    }
-  }
-  @media (width<=640px) {
-    .inputGroup {
-      gap: 16px;
-    }
-  }
-  .validationInput {
-    background-color: #d9d9d9;
-    border-radius: 12px;
-    flex: 1;
-    height: 48px;
-    border: none;
-    padding: 0 16px;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-  }
-  @media (width<=991px) {
-    .validationInput {
-      width: 100%;
-    }
-  }
-  .validateButton {
-    color: #213555;
-    cursor: pointer;
-    background-color: #e5d283;
-    border-radius: 12px;
-    height: 48px;
-    padding: 4px 24px;
-    font-family: Inter, sans-serif;
     font-size: 24px;
-    font-weight: 400;
-    border: none;
   }
-  @media (width<=991px) {
-    .validateButton {
-      width: 100%;
-    }
-  }
-  .resultsSection {
+}
+.inputGroup {
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  display: flex;
+}
+@media (width<=991px) {
+  .inputGroup {
     flex-direction: column;
-    gap: 24px;
-    width: 100%;
-    max-width: 1032px;
-    display: flex;
   }
+}
+@media (width<=640px) {
+  .inputGroup {
+    gap: 16px;
+  }
+}
+.validationInput {
+  background-color: #d9d9d9;
+  border-radius: 12px;
+  flex: 1;
+  height: 48px;
+  border: none;
+  padding: 0 16px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+@media (width<=991px) {
+  .validationInput {
+    width: 100%;
+  }
+}
+.validateButton {
+  color: #213555;
+  cursor: pointer;
+  background-color: #e5d283;
+  border-radius: 12px;
+  height: 48px;
+  padding: 4px 24px;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+}
+@media (width<=991px) {
+  .validateButton {
+    width: 100%;
+  }
+}
+.resultsSection {
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 1032px;
+  display: flex;
+  margin: 0 auto;
+
+  min-height: 250px;
+}
+
+.logMessage {
+  margin-top: 56px;
+
+  width: 100%;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}

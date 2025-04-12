@@ -5,7 +5,7 @@ import AppLink from "../AppLink";
 
 export default function HeroSection() {
   return (
-    <section className={styles.root}>
+    <section id="hero-section" className={styles.root}>
       <div className={styles.backBlock}>
         <div className={styles.heroBlock}>
           <h1 className={styles.title}>Optimize website</h1>
@@ -14,10 +14,10 @@ export default function HeroSection() {
             intelligence.
           </p>
           <div className={styles.btnContainer}>
-            <AppLink className={styles.accentBtn} href={"/"}>
+            <AppLink className={styles.accentBtn} href={"/#membership-section"}>
               Optimize now
             </AppLink>
-            <AppLink className={styles.secondBtn} href={"/"}>
+            <AppLink className={styles.secondBtn} href={"/#footer"}>
               Contact Us
             </AppLink>
           </div>

@@ -1,6 +1,13 @@
 import Image from "next/image";
 import styles from "./styles/InputDesign.module.css";
 
+import s1 from "../../images/benefits/s1.svg";
+import s2 from "../../images/benefits/s2.svg";
+import s3 from "../../images/benefits/s3.svg";
+import s4 from "../../images/benefits/s4.svg";
+import s5 from "../../images/benefits/s5.svg";
+import s6 from "../../images/benefits/s6.svg";
+
 interface BenefitItemProps {
   iconSrc: string;
   title: string;
@@ -38,71 +45,50 @@ function BenefitItem({
 export default function BenefitsSection() {
   const benefits = [
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Alarm.svg",
-      title: "Sofort Hilfe",
+      iconSrc: s1,
+      title: "Instant Insights",
       description:
-        "Sofort nach Beitritt können Sie unsere Beratung in Anspruch nehmen und wir unterstützen Sie bei der Klärung Ihres mietrechtlichen Anliegens.",
+        "Get immediate feedback on your website's performance, structure, and accessibility right after your first scan.",
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/DMB.svg",
-      title: "Mitglied im DMB",
+      iconSrc: s2,
+      title: "Trusted Expertise",
       description:
-        "Sie gehören dem Deutschen Mieterbund an. Mit seinen 1,3 Millionen Mitgliedshaushalten ist der DMB die Stimme aller Mieter:innen in Berlin und den Bundesländern.",
+        "Built by a team of web optimization professionals with deep knowledge in frontend, UX, and technical audits.",
       className: styles.article2,
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Legal-Scale.svg",
-      title: "Rechtsschutz",
+      iconSrc: s3,
+      title: "Performance-First Approach",
       description:
-        "Entsteht Streit frühestens drei Monate nach Beitritt, übernimmt unsere Rechtsschutzversicherung den größten Teil Ihrer Prozesskosten.",
+        "We help you identify and resolve the issues that slow down your site, improving speed, SEO, and user experience.",
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Amazon-Pin-Location.svg",
-      title: "Standorte in der Nähe",
+      iconSrc: s4,
+      title: "Personalized Support",
       description:
-        "An unserem Hauptstandort am Berliner Tor und in unseren zahlreichen Außenstellen finden Sie Ihre persönlichen Ansprechpartner:innen.",
+        "Whether you're a freelancer, an agency, or an enterprise, our team is here to guide you with tailored recommendations.",
       className: styles.article3,
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Group.svg",
-      title: "Kostenfreie Expertenberatung",
+      iconSrc: s5,
+      title: "Free Expert Tools",
       description:
-        "Die mietrechtliche Beratung ist im Mitgliedsbeitrag enthalten und erfolgt ausschließlich durch qualifizierte Jurist:innen. Wir legen großen Wert auf die Fortbildung unserer Kolleg:innen.",
+        "Use our validation, contrast, and SEO checkers designed to help you meet modern web standards effortlessly.",
     },
     {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Discount.svg",
-      title: "Beitrags­ermäßigungen",
+      iconSrc: s6,
+      title: "Accessible for Everyone",
       description:
-        "Für Mitglieder zahlreicher Gewerkschaften und Sozialverbände sowie für Studierende, Auszubildende und Menschen mit geringem Einkommen bieten wir Beitragsermäßigungen an. Sprechen Sie uns an!",
+        "Our platform is free to try, and we offer custom pricing for startups, students, and nonprofits. Just reach out!",
       className: styles.article4,
-    },
-    {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/App-Interface.svg",
-      title: "Mitgliederbereich",
-      description:
-        "In unserem Mitgliederbereich stellen Sie uns Ihre Beratungsanfrage, behalten Sie den Überblick über Ihren Fall, ändern Sie Ihre Daten und vieles mehr.",
-    },
-    {
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/09/Legal-Certificate.svg",
-      title: "Hilfe vor Ort",
-      description:
-        "Unsere Mitglieder erhalten kompetente Hilfe durch unseren Außendienst, zum Beispiel bei Wohnungsabnahmen, zu besonders günstigen Preisen.",
-      className: styles.article5,
     },
   ];
 
   return (
     <section className={styles.section7}>
       <div className={styles.div73}>
-        <h3 className={styles.h33}>Alle Vorteile auf einen Blick</h3>
+        <h3 className={styles.h33}>All Benefits at a Glance</h3>
         <div className={styles.div74}>
           <div className={styles.div75}>
             <div>
@@ -130,17 +116,6 @@ export default function BenefitsSection() {
               </div>
               <div className={styles.div82}>
                 {benefits.slice(4, 6).map((benefit, index) => (
-                  <BenefitItem
-                    key={index}
-                    iconSrc={benefit.iconSrc}
-                    title={benefit.title}
-                    description={benefit.description}
-                    className={benefit.className}
-                  />
-                ))}
-              </div>
-              <div className={styles.div85}>
-                {benefits.slice(6, 8).map((benefit, index) => (
                   <BenefitItem
                     key={index}
                     iconSrc={benefit.iconSrc}

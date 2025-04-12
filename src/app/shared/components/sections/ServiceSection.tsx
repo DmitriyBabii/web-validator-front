@@ -2,6 +2,12 @@
 import styles from "./styles/InputDesign.module.css";
 import Image from "next/image";
 
+import approvalImage from "../../images/services/Approval-4.svg";
+import knowledgeImage from "../../images/services/Knowledge-Base-2.svg";
+import documentImage from "../../images/services/Documents-3.svg";
+import teamImage from "../../images/services/Team-Building-2.svg";
+import AppLink from "../AppLink";
+
 function ServiceCard({
   href,
   iconSrc,
@@ -14,7 +20,7 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <a href={href} className={styles.a6}>
+    <AppLink href={href} className={styles.a6}>
       <div className={styles.div18}>
         <div className={styles.div19}>
           <Image
@@ -27,7 +33,7 @@ function ServiceCard({
             className={styles.img5}
           />
         </div>
-        <h5 className={styles.h5}>{title}</h5>
+        <h3 className={styles.h5}>{title}</h3>
         <p className={styles.p4}>{description}</p>
         <span className={styles.span}>
           <div className={styles.svg}>
@@ -40,40 +46,35 @@ function ServiceCard({
           </div>
         </span>
       </div>
-    </a>
+    </AppLink>
   );
 }
 
 export default function ServicesSection() {
   const services = [
     {
-      href: "https://www.mieterverein-hamburg.de/mietwissen-a-z/",
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/07/Knowledge-Base-2.svg",
-      title: "Mietwissen A-Z",
-      description:
-        "Unsere erste Hilfe für Sie: Hier finden Sie alles von A bis Z",
+      href: "/#press-section",
+      iconSrc: approvalImage,
+      title: "Optimize Now",
+      description: "Enhance your website's speed today",
     },
     {
-      href: "https://www.mieterverein-hamburg.de/ueber-uns/#unsere-philosophie",
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/07/Approval-4.svg",
-      title: "Unsere Philosophie",
-      description: "Wer wir sind und was uns antreibt",
+      href: "/#press-section",
+      iconSrc: knowledgeImage,
+      title: "Site Check",
+      description: "Identify and resolve website issues",
     },
     {
-      href: "https://www.mieterverein-hamburg.de/mediathek/",
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/07/Documents-3.svg",
-      title: "Unsere Mediathek",
-      description: "Pressemitteilungen, Urteile, Meldungen und vieles mehr",
+      href: "/#membership-section",
+      iconSrc: documentImage,
+      title: "Contrast Check",
+      description: "Enhance readability and accessibility",
     },
     {
-      href: "https://www.mieterverein-hamburg.de/mitglied-werden/",
-      iconSrc:
-        "https://www.mieterverein-hamburg.de/wp-content/uploads/2023/07/Team-Building-2.svg",
-      title: "Mitglied werden",
-      description: "Und vollen Rechtsschutz genießen",
+      href: "/#footer",
+      iconSrc: teamImage,
+      title: "Contact Us",
+      description: "Please contact us",
     },
   ];
 

@@ -2,32 +2,24 @@
 import * as React from "react";
 import styles from "./ColorMessage.module.css";
 
-// const data = {
-//   colorStyles: {
-//     "background-color": { red: 8, green: 49, blue: 88 },
-//     "border-bottom-color": { red: 255, green: 255, blue: 255 },
-//     color: { red: 192, green: 196, blue: 201 },
-//     "border-left-color": { red: 255, green: 255, blue: 255 },
-//     "border-top-color": { red: 255, green: 255, blue: 255 },
-//     "border-right-color": { red: 255, green: 255, blue: 255 },
-//     "outline-color": { red: 192, green: 196, blue: 201 },
-//   },
-//   contrast: {
-//     "border-bottom-color": 13.202847269215619,
-//     color: 7.53233365973136,
-//     "border-left-color": 13.202847269215619,
-//     "border-top-color": 13.202847269215619,
-//     "border-right-color": 13.202847269215619,
-//     "outline-color": 7.53233365973136,
-//   },
-//   nonColorStyles: {
-//     "border-top-width": "1px",
-//     "border-right-width": "1px",
-//     "border-bottom-width": "1px",
-//     "border-left-width": "1px",
-//   },
-//   fragment: `<div class="dropdown-menu"><a href="/supportRequest" class="plain dropdown-item">Request support</a><a href="/upgrade" class="plain dropdown-item">Upgrade your license keys</a><a href="/support" class="plain dropdown-item">Support packages explained</a><a href="/jprofiler/training" class="plain dropdown-item">Training partners</a></div>`,
-// };
+type ColorValidateType = {
+  contrast: {
+    [key: string]: number;
+  };
+  colorStyles: {
+    [key: string]: ColorType;
+  };
+  nonColorStyles: {
+    [key: string]: string;
+  };
+  fragment: string;
+};
+
+type ColorType = {
+  red: number;
+  green: number;
+  blue: number;
+};
 
 const getContrastLevelClass = (contrast: number) => {
   if (contrast < 3) return styles.lowContrast; // червоний
@@ -53,10 +45,26 @@ function toCamelCase(kebab: string): string {
 
 // WarningMessage component for the warning container
 const WarningMessage = ({ text }: { text: string }) => {
-  return <div className={styles.warningContainer}>{text}</div>;
+  const [expanded, setExpanded] = React.useState(false);
+  const toggleExpand = () => setExpanded(!expanded);
+
+  return (
+    <div
+      className={`${styles.warningContainer} ${
+        expanded ? styles.textExpanded : styles.textUnExpanded
+      }`}
+      onClick={toggleExpand}
+    >
+      {text}
+    </div>
+  );
 };
 
-export default function ColorMessage({ colorMessage }) {
+export default function ColorMessage({
+  colorMessage,
+}: {
+  colorMessage: ColorValidateType;
+}) {
   const data = colorMessage;
   const contrastEntries = Object.entries(data.contrast);
   const colorStyles = Object.fromEntries(
