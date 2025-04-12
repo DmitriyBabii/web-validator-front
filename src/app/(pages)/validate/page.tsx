@@ -5,6 +5,9 @@ import ValidateMessage from "@/app/shared/components/ValidateMessage";
 import axios from "axios";
 import ServicesSection from "@/app/shared/components/sections/ServiceSection";
 
+import errorImage from "../error.svg";
+import Image from "next/image";
+
 interface ValidateError {
   line: number;
   column: number;
@@ -13,6 +16,7 @@ interface ValidateError {
 }
 
 function InputDesign() {
+  const [error, setError] = useState(false);
   const [empty, setEmpty] = useState(true);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState([]);
@@ -21,6 +25,7 @@ function InputDesign() {
   const handleValidate = () => {
     setLoading(true);
     setEmpty(false);
+    setError(false);
     axios
       .post("/api/validate/html", {
         url: inputValue,
@@ -35,6 +40,7 @@ function InputDesign() {
         setLoading(false);
         setEmpty(true);
         setErrors([]);
+        setError(true);
       });
   };
 
@@ -68,15 +74,22 @@ function InputDesign() {
           errors.map((error: ValidateError, index) => (
             <ValidateMessage
               key={index}
-              level={error.level} // TODO change for real level
+              level={error.level}
               message={error.message}
               line={error.line}
               column={error.column}
             />
           ))
         )}
-        {empty ? (
-          <span className={styles.logMessage}>You will see the results here</span>
+        {error ? (
+          <div className={styles.errorMessage}>
+            <span>Oops! Something went wrong.</span>
+            <Image src={errorImage} alt="error" />
+          </div>
+        ) : empty ? (
+          <span className={styles.logMessage}>
+            You will see the results here
+          </span>
         ) : (
           ""
         )}

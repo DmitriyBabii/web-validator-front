@@ -5,4 +5,12 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    environment:
+      - API_URL=http://app:8080
+    restart: unless-stopped
+    networks:
+      - validator-network
 
+networks:
+  validator-network:
+    external: true
